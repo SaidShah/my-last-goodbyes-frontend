@@ -16,16 +16,16 @@ class Navbar extends Component {
       <MDBCollapse id="navbarCollapse3"  navbar>
         <MDBNavbarNav left>
           <MDBNavItem >
-            <MDBNavLink to="/home" className="black-text">Home</MDBNavLink>
+            <MDBNavLink to="/" className="black-text">Home</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/profile" className="black-text">Curriculum</MDBNavLink>
+            <MDBNavLink to="/curriculum" className="black-text">Curriculum</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/search" className="black-text">Pricing</MDBNavLink>
+            <MDBNavLink to="/pricing" className="black-text">Pricing</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/search" className="black-text">Requirements</MDBNavLink>
+            <MDBNavLink to="/requirements" className="black-text">Requirements</MDBNavLink>
           </MDBNavItem>
 
         </MDBNavbarNav>
