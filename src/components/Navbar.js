@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
+import logo from "../images/vision_code_500x500_logo.png"
 
 
 class Navbar extends Component {
@@ -9,7 +10,7 @@ class Navbar extends Component {
     return (
       <MDBNavbar color="blue" dark expand="md">
       <MDBNavbarBrand>
-        <strong className="black-text">My last Goodbyes</strong>
+        <strong className="black-text"><img src={logo} className="logo" alt="vision code logo"/></strong>
       </MDBNavbarBrand>
       <MDBNavbarToggler onClick={this.toggleCollapse} />
       <MDBCollapse id="navbarCollapse3"  navbar>
@@ -18,10 +19,13 @@ class Navbar extends Component {
             <MDBNavLink to="/home" className="black-text">Home</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/profile" className="black-text">Profile</MDBNavLink>
+            <MDBNavLink to="/profile" className="black-text">Curriculum</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/search" className="black-text">Search</MDBNavLink>
+            <MDBNavLink to="/search" className="black-text">Pricing</MDBNavLink>
+          </MDBNavItem>
+          <MDBNavItem>
+            <MDBNavLink to="/search" className="black-text">Requirements</MDBNavLink>
           </MDBNavItem>
 
         </MDBNavbarNav>

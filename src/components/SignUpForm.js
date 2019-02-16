@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SignUpForm = ({}) => (
+const SignUpForm = () => (
   <div className="signup-form">
       <div className="card">
     <div className="card-block">
@@ -11,25 +11,25 @@ const SignUpForm = ({}) => (
 
     <div className="md-form margin-left">
         <i className="fa fa-user prefix"></i>
-        <input type="text" id="form3" className="form-control" placeholder="First Name"/>
+        <input type="text"  className="form-control" placeholder="First Name"/>
     </div>
     <div className="md-form margin-left">
         <i className="fa fa-user prefix "></i>
-        <input type="text" id="form3" className="form-control" placeholder="Last Name"/>
+        <input type="text" className="form-control" placeholder="Last Name"/>
     </div>
     <div className="md-form margin-left">
         <i className="fa fa-envelope prefix "></i>
-        <input type="text" id="form2" className="form-control" placeholder="Username"/>
+        <input type="text"  className="form-control" placeholder="Username"/>
     </div>
 
     <div className="md-form margin-left">
         <i className="fa fa-lock prefix"></i>
-        <input type="password" id="form4" className="form-control " placeholder="Password"/>
+        <input type="password"  className="form-control " placeholder="Password"/>
     </div>
 
     <div className="md-form margin-left">
         <i className="fa fa-lock prefix"></i>
-        <input type="password" id="form4" className="form-control " placeholder="Confirm Password"/>
+        <input type="password"  className="form-control " placeholder="Confirm Password"/>
     </div>
 
     <div className="text-center">
