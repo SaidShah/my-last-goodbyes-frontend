@@ -14,12 +14,30 @@ class SignUpForm extends Component {
     this.setState({
       [e.target.name]:e.target.value
     })
-    
+
+  }
+
+  handleSubmit=(e,values)=>{
+    e.preventDefault();
+    if(this.state.password !== this.state.confirmPassword){
+      alert("Your Passwords Do Not Match!")
+    }else{
+      this.props.handleSignUp(values)
+      this.setState({
+        firstName: '',
+        lastName: '',
+        username: '',
+        password: '',
+        confirmPassword: ''
+      },()=>this.props.browserProps.history.push("/"))
+    }
+
   }
 
   render() {
     return (
-      <form>
+      <form onSubmit={(e)=>this.handleSubmit(e,this.state)}>
+
       <div className="signup-form">
           <div className="card">
         <div className="card-block">
@@ -30,25 +48,25 @@ class SignUpForm extends Component {
 
         <div className="md-form margin-left">
             <i className="fa fa-user prefix"></i>
-            <input type="text"  className="form-control" placeholder="First Name" value={this.state.firstName} name="firstName" onChange={this.handleChange}/>
+            <input type="text"  className="form-control" placeholder="First Name" value={this.state.firstName} name="firstName" onChange={this.handleChange} required/>
         </div>
         <div className="md-form margin-left">
             <i className="fa fa-user prefix "></i>
-            <input type="text" className="form-control" placeholder="Last Name" value={this.state.lastName} name="lastName" onChange={this.handleChange}/>
+            <input type="text" className="form-control" placeholder="Last Name" value={this.state.lastName} name="lastName" onChange={this.handleChange} required/>
         </div>
         <div className="md-form margin-left">
             <i className="fa fa-envelope prefix "></i>
-            <input type="text"  className="form-control" placeholder="Username" value={this.state.username} name="username" onChange={this.handleChange}/>
+            <input type="text"  className="form-control" placeholder="Username" value={this.state.username} name="username" onChange={this.handleChange} required/>
         </div>
 
         <div className="md-form margin-left">
             <i className="fa fa-lock prefix"></i>
-            <input type="password"  className="form-control " placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange}/>
+            <input type="password"  className="form-control " placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange} required/>
         </div>
 
         <div className="md-form margin-left">
             <i className="fa fa-lock prefix"></i>
-            <input type="password"  className="form-control " placeholder="Confirm Password" value={this.state.confirmPassword} name="confirmPassword" onChange={this.handleChange}/>
+            <input type="password"  className="form-control " placeholder="Confirm Password" value={this.state.confirmPassword} name="confirmPassword" onChange={this.handleChange} required/>
         </div>
 
         <div className="text-center">

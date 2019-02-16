@@ -6,13 +6,21 @@ import {Switch, Route, withRouter} from 'react-router-dom'
 
 class WholePage extends Component {
 
+  handleSignUp=(values)=>{
+    console.log(values)
+  }
+
+  handleLogin=(values)=>{
+    console.log(values)
+  }
+
   render() {
     return (
       <div>
         <Navbar/>
         <Switch>
-          <Route path="/signup" render={()=><SignUpForm/>}/>
-          <Route path="/login" render={()=><LoginForm/>}/>
+          <Route path="/signup" render={()=><SignUpForm handleSignUp={this.handleSignUp} browserProps={this.props}/>} />
+          <Route path="/login" render={()=><LoginForm handleLogin={this.handleLogin} browserProps={this.props}/>}/>
         </Switch>
       </div>
     );
