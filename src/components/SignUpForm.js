@@ -1,46 +1,69 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const SignUpForm = () => (
-  <div className="signup-form">
-      <div className="card">
-    <div className="card-block">
+class SignUpForm extends Component {
 
-    <div className="form-header blue-gradient">
-        <h3><i className="fa fa-user padding-header"></i> Register</h3>
-    </div>
+  state={
+    firstName: '',
+    lastName: '',
+    username: '',
+    password: '',
+    confirmPassword: ''
+  }
 
-    <div className="md-form margin-left">
-        <i className="fa fa-user prefix"></i>
-        <input type="text"  className="form-control" placeholder="First Name"/>
-    </div>
-    <div className="md-form margin-left">
-        <i className="fa fa-user prefix "></i>
-        <input type="text" className="form-control" placeholder="Last Name"/>
-    </div>
-    <div className="md-form margin-left">
-        <i className="fa fa-envelope prefix "></i>
-        <input type="text"  className="form-control" placeholder="Username"/>
-    </div>
+  handleChange=(e)=>{
+    this.setState({
+      [e.target.name]:e.target.value
+    })
+    
+  }
 
-    <div className="md-form margin-left">
-        <i className="fa fa-lock prefix"></i>
-        <input type="password"  className="form-control " placeholder="Password"/>
-    </div>
+  render() {
+    return (
+      <form>
+      <div className="signup-form">
+          <div className="card">
+        <div className="card-block">
 
-    <div className="md-form margin-left">
-        <i className="fa fa-lock prefix"></i>
-        <input type="password"  className="form-control " placeholder="Confirm Password"/>
-    </div>
+        <div className="form-header blue-gradient">
+            <h3><i className="fa fa-user padding-header"></i> Register</h3>
+        </div>
 
-    <div className="text-center">
-        <button className="btn btn-indigo">Sign up</button>
-        <hr></hr>
+        <div className="md-form margin-left">
+            <i className="fa fa-user prefix"></i>
+            <input type="text"  className="form-control" placeholder="First Name" value={this.state.firstName} name="firstName" onChange={this.handleChange}/>
+        </div>
+        <div className="md-form margin-left">
+            <i className="fa fa-user prefix "></i>
+            <input type="text" className="form-control" placeholder="Last Name" value={this.state.lastName} name="lastName" onChange={this.handleChange}/>
+        </div>
+        <div className="md-form margin-left">
+            <i className="fa fa-envelope prefix "></i>
+            <input type="text"  className="form-control" placeholder="Username" value={this.state.username} name="username" onChange={this.handleChange}/>
+        </div>
 
-    </div>
+        <div className="md-form margin-left">
+            <i className="fa fa-lock prefix"></i>
+            <input type="password"  className="form-control " placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange}/>
+        </div>
 
-    </div>
-    </div>
-  </div>
-);
+        <div className="md-form margin-left">
+            <i className="fa fa-lock prefix"></i>
+            <input type="password"  className="form-control " placeholder="Confirm Password" value={this.state.confirmPassword} name="confirmPassword" onChange={this.handleChange}/>
+        </div>
+
+        <div className="text-center">
+            <button type="submit" className="btn btn-indigo">Sign up</button>
+            <hr></hr>
+
+        </div>
+
+        </div>
+        </div>
+      </div>
+      </form>
+    );
+  }
+
+}
 
 export default SignUpForm;

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const LoginForm = () => (
+  
   <div className="signup-form">
       <div className="card">
     <div className="card-block">
