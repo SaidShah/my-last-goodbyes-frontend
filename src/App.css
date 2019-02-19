@@ -19,3 +19,20 @@
   height: 30px;
   width: 130px;
 }
+
+.text-center{
+  text-align: center;
+}
+
+.top-margin{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn.blue{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: auto;
+  width: 250px;
+  height: 100px;
+}
