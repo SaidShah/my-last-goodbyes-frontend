@@ -11,21 +11,16 @@ class Footer extends Component {
 
             <div className="row">
 
-
               <div className="col-md-6 mt-md-0 mt-3">
-
 
                 <h5 className="text-uppercase">Project Code Bootcamp</h5>
                 <p>Learn Programming and Change Your Life</p>
 
               </div>
 
-
               <hr className="clearfix w-100 d-md-none pb-3"/>
 
-
               <div className="col-md-3 mb-md-0 mb-3">
-
 
                   <h5 className="text-uppercase">About</h5>
 
@@ -67,11 +62,9 @@ class Footer extends Component {
 
                 </div>
 
-
             </div>
 
           </div>
-
 
           <div className="footer-copyright text-center py-3">© 2018 Copyright:
             <a href="/"> ProjectCode.com</a>
