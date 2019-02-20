@@ -50,7 +50,7 @@ class Footer extends Component {
                       <a href="/privacy">Privacy Policy</a>
                     </li>
                     <li>
-                      <a href="/apply">Apply Now</a>
+                      <a href="/signup">Apply Now</a>
                     </li>
                     <li>
                       <a href="/">Statistics</a>
