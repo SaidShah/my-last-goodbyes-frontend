@@ -4,7 +4,7 @@ class Curriculum extends Component {
 
   render() {
     return (
-
+<div className="blue-bg">
   <div className="container text-center">
     <div className="row">
       <div className="col curriculum-border">
@@ -33,17 +33,44 @@ class Curriculum extends Component {
         <p className="curriculum-p-tag">HTML & CSS test</p>
         <p className="curriculum-p-tag">HTML & CSS final project</p>
       </div>
+
+
       <div className="col curriculum-border">
-      <h2 className="dark-blue-text">Ruby &amp; Rails <span className="half-size black-text"> &nbsp;week 4 - week 6 </span></h2>
+      <h2 className="dark-blue-text">JavaScript <span className="half-size black-text"> &nbsp;week 4 - week 6 </span></h2>
+      <h5>Week 4</h5>
+      <hr className="hr-rules"/>
+      <p className="curriculum-p-tag">JavaScript basics</p>
+      <p className="curriculum-p-tag">Write, execute and use comments in console</p>
+      <p className="curriculum-p-tag">Understand and use different data types</p>
+      <p className="curriculum-p-tag">Find, listen and respond to specific events</p>
+      <p className="curriculum-p-tag">Add or remove HTML from a page</p>
+      <p className="curriculum-p-tag">Use local and global variables and functions</p>
+        <hr className="hr-rules"/>
+        <h5>Week 5</h5>
+          <p className="curriculum-p-tag">Intro to the DOM</p>
+          <p className="curriculum-p-tag">Identify and interact with the Document Object Model</p>
+          <p className="curriculum-p-tag">Learn how JS manipulates the DOM</p>
+          <p className="curriculum-p-tag">Interact and manipulate the DOM</p>
+          <p className="curriculum-p-tag">Use document selectors to select elements</p>
+          <p className="curriculum-p-tag">Use Conditional Statements</p>
+          <p className="curriculum-p-tag">Learn arrays and objects</p>
+          <p className="curriculum-p-tag">Use loops and switch statements</p>
+          <p className="curriculum-p-tag">Learn scope and closure</p>
+          <hr className="hr-rules"/>
+          <h5>Week 6</h5>
+          <p className="curriculum-p-tag">JavaScript test</p>
+          <p className="curriculum-p-tag">JavaScritp, HTML & CSS final project</p>
       </div>
     </div>
 
 
     <div className="row">
       <div className="col curriculum-border">
-        <h2 className="dark-blue-text">Javascript <span className="half-size black-text"> &nbsp;week 7 - week 9 </span> </h2>
+        <h2 className="dark-blue-text">Ruby &amp; Rails <span className="half-size black-text"> &nbsp;week 7 - week 9 </span> </h2>
 
       </div>
+
+
       <div className="col curriculum-border">
       <h2 className="dark-blue-text">React &amp; Redux <span className="half-size black-text"> &nbsp;week 10 - week 12 </span></h2>
 
@@ -56,6 +83,7 @@ class Curriculum extends Component {
 
       </div>
 
+    </div>
     </div>
     </div>
     );
