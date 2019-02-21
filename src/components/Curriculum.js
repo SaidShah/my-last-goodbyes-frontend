@@ -124,8 +124,34 @@ class Curriculum extends Component {
 
     <div className="row">
       <div className="col curriculum-border">
-        <h2 className="dark-blue-text">Data Structures &amp; Algorithms <span className="half-size black-text"> &nbsp;week 13 - week 15 </span></h2>
-
+        <h2 className="dark-blue-text">Data Structures &amp; Algorithms in Java<span className="half-size black-text"> &nbsp;week 13 - week 15 </span></h2>
+        <hr className="hr-rules"/>
+        <h5 className="green-text">Week 13</h5>
+        <p className="curriculum-p-tag">Learn about Big O / space and time complexity</p>
+        <p className="curriculum-p-tag">Implement Bubble sort</p>
+        <p className="curriculum-p-tag">Implement Selection sort</p>
+        <p className="curriculum-p-tag">Implement Insertion sort</p>
+        <p className="curriculum-p-tag">Implement Merge sort</p>
+        <p className="curriculum-p-tag">Implement Quick sort</p>
+        <p className="curriculum-p-tag">Implement Linked List</p>
+        <p className="curriculum-p-tag">Implement Stack & Queue</p>
+        <hr className="hr-rules"/>
+        <h5 className="green-text">Week 14</h5>
+        <p className="curriculum-p-tag">Implement Hash Set</p>
+        <p className="curriculum-p-tag">Implement Hash Map</p>
+        <p className="curriculum-p-tag">Implement Tree Set and Tree Map</p>
+        <p className="curriculum-p-tag">Implement Array List</p>
+        <p className="curriculum-p-tag">Implement Depth First Search</p>
+        <p className="curriculum-p-tag">Implement Breadth First Search</p>
+        <p className="curriculum-p-tag">Implement Linear Search</p>
+        <h5 className="green-text">Week 15</h5>
+        <p className="curriculum-p-tag">Implement Binary Search</p>
+        <p className="curriculum-p-tag">Implement Sequential Search</p>
+        <p className="curriculum-p-tag">Implement Recursion</p>
+        <p className="curriculum-p-tag">Practice...Algorithm problems</p>
+        <p className="curriculum-p-tag">Practice....</p>
+        <p className="curriculum-p-tag">Practice....</p>
+        <p className="curriculum-p-tag">Practice....</p>
       </div>
 
     </div>
