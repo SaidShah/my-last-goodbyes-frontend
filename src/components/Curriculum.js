@@ -59,7 +59,7 @@ class Curriculum extends Component {
           <hr className="hr-rules"/>
           <h5>Week 6</h5>
           <p className="curriculum-p-tag">JavaScript test</p>
-          <p className="curriculum-p-tag">JavaScritp, HTML & CSS final project</p>
+          <p className="curriculum-p-tag">JavaScript, HTML & CSS final project</p>
       </div>
     </div>
 
@@ -67,7 +67,29 @@ class Curriculum extends Component {
     <div className="row">
       <div className="col curriculum-border">
         <h2 className="dark-blue-text">Ruby &amp; Rails <span className="half-size black-text"> &nbsp;week 7 - week 9 </span> </h2>
-
+        <h5>Week 7</h5>
+        <hr className="hr-rules"/>
+        <p className="curriculum-p-tag">Intro to Ruby</p>
+        <p className="curriculum-p-tag">Create, write and execute a file</p>
+        <p className="curriculum-p-tag">Learn and use IRB</p>
+        <p className="curriculum-p-tag">Understanding the 4 common error types</p>
+        <p className="curriculum-p-tag">Create, re-assign and pass variables</p>
+        <p className="curriculum-p-tag">Learn and use different data types</p>
+        <p className="curriculum-p-tag">Learn and use methods</p>
+          <hr className="hr-rules"/>
+          <h5>Week 8</h5>
+          <p className="curriculum-p-tag">Intro to Rspec</p>
+          <p className="curriculum-p-tag">Practice writing tests with Rspec</p>
+          <p className="curriculum-p-tag">Intro to rails</p>
+          <p className="curriculum-p-tag">Learn and use Rails scaffold and other generators</p>
+          <p className="curriculum-p-tag">Intro to Postgres</p>
+          <p className="curriculum-p-tag">Build a database with Postgres</p>
+          <p className="curriculum-p-tag">Learn and use MVC file structures</p>
+          <p className="curriculum-p-tag">Create API's for the Rails back-end</p>
+            <hr className="hr-rules"/>
+            <h5>Week 9</h5>
+            <p className="curriculum-p-tag">Ruby and Rails test</p>
+            <p className="curriculum-p-tag">Ruby, Rails, JavaScript, HTML & CSS final project</p>
       </div>
 
 
